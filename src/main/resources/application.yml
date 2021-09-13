@@ -1,11 +1,13 @@
 app:
   datasource:
     main:
-      driver-class-name: org.postgresql.Driver
-      jdbc-url: jdbc:postgresql://localhost:5432/amigoscode
-      password: 'password'
+      #driver-class-name: org.postgresql.Driver
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      #jdbc-url: jdbc:postgresql://localhost:5432/amigoscode
+      jdbc-url: jdbc:mysql://localhost:3306/amigoscode?useSSL=false
+      username: root
+      password: 'root'
       pool-size: 30
-      username: amigoscode
 
 server:
   error:
